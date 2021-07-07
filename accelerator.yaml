@@ -1,3 +1,5 @@
+  # includes: ["README.md"]
+
   # type: Let
   # symbols:
   # - name: theAnswer
@@ -6,4 +8,6 @@
   #   includes: ["README.md"]
 
 engine:
-  includes: ["README.md"]
+  derivedSymbols:
+  - name: theAnswer
+    expression: "41 + 1"
