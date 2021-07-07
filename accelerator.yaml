@@ -17,6 +17,10 @@
 
 engine:
   derivedSymbols:
-    - name: theAnswer
-      expression: "41 + 1"
+    - name: thePath
+      expression: "'TEST.md'"
   includes: ["README.md"]
+  transformations:
+  - type: RewritePath
+    rewriteTo: "#thePath"
+
