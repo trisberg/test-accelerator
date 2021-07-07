@@ -12,6 +12,5 @@ engine:
   symbols:
   - name: theAnswer
     expression: "41 + 1"
-  noShadow: false
   in:
     includes: ["README.md"]
