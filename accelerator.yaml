@@ -1,8 +1,5 @@
 engine:
+  type: Chain
   transformations:
-  - type: Exclude
-    pattern: ["**", "config/**"]
-  - type: Include
-    pattern: ["README.md"]
   - type: Unique
     strategy: UseLast
