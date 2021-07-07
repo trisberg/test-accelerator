@@ -1,9 +1,11 @@
 engine:
-  type: Chain
-  transformations:
-    - type: Merge
-      sources:
-        - excludes: ["README.md", "config/**"]
-        - includes: ["README.md"]
-    - type: Unique
-      strategy: Fail
+  derivedSymbols:
+    - name: areWeHappy
+      expression: '#appName.contains("fun")'
+    - name: appNameNoHyphens
+      expression: "#appName.replace('-', '')"
+    - name: theAnswer
+      expression: "41 + 1"
+  excludes: ["**/secret/*"]
+  sources:
+  - includes: [ "**" ]
