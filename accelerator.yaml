@@ -1,9 +1,9 @@
 engine:
   type: Chain
   transformations:
-  - type: UniquePath
-    strategy: UseLast
   - type: Merge
     sources:
     - excludes: [ "README.md", "config/**" ]
     - includes: [ "README.md" ]
+  - type: UniquePath
+    strategy: UseLast
