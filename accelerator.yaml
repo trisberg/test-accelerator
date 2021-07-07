@@ -1,5 +1,4 @@
 engine:
-  type: Chain
   transformations:
   - type: Exclude
     pattern: ["**", "config/**"]
