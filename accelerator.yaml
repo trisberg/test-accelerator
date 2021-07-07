@@ -1,9 +1,9 @@
 engine:
   type: Chain
   transformations:
-    # - type: Merge
-    #   sources:
-    #     - excludes: ["config/**"]
-    #     - includes: ["**"]
+    - type: Merge
+      sources:
+        - excludes: ["config/**"]
+        - includes: ["**"]
     - type: UniquePath
       strategy: UseLast
