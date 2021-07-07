@@ -23,6 +23,6 @@ engine:
   - includes: ["LICENSE"]
   - includes: ["README.md"]
     transformations:
-      type: RewritePath
+    - type: RewritePath
       rewriteTo: "#thePath"
 
