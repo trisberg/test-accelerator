@@ -3,7 +3,7 @@ engine:
   transformations:
     - type: Merge
       sources:
-        - excludes: ["config/**"]
-        - includes: ["**"]
+        - excludes: ["README.md", "config/**"]
+        - includes: ["README.md"]
     - type: Unique
-      strategy: UseLast
+      strategy: Fail
