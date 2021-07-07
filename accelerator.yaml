@@ -20,7 +20,8 @@ engine:
     - name: thePath
       expression: "'TEST.md'"
   sources:
+  - includes: ["LICENSE"]
   - includes: ["README.md"]
-  - type: RewritePath
+    type: RewritePath
     rewriteTo: "#thePath"
 
