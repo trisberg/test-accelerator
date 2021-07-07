@@ -1,5 +1,5 @@
 engine:
-  derivedSymbols:
-    - name: X
-      value: "'42'"
-  includes: [ "**" ]
+  type: Merge
+  sources:
+   - excludes: [ "config/**" ]
+   - includes: [ "**" ]
