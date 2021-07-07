@@ -1,6 +1,6 @@
 engine:
   type: Merge
+  onConflict: UseLast
   sources:
    - excludes: [ "config/**" ]
-     includes: [ "**" ]
-   - includes: [ "config/*.yaml" ]
+   - includes: [ "**" ]
