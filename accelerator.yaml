@@ -5,5 +5,5 @@ engine:
     #   sources:
     #     - excludes: ["config/**"]
     #     - includes: ["**"]
-    - type: UniquePaths
+    - type: UniquePath
       strategy: UseLast
