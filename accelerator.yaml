@@ -1,7 +1,9 @@
+  # type: Let
+  # symbols:
+  # - name: theAnswer
+  #   expression: "41 + 1"
+  # in:
+  #   includes: ["README.md"]
+
 engine:
-  type: Let
-  symbols:
-  - name: theAnswer
-    expression: "41 + 1"
-  in:
-    includes: ["README.md"]
+  includes: ["README.md"]
