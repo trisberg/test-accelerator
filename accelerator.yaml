@@ -3,7 +3,7 @@ engine:
   transformations:
     - type: Merge
       sources:
-        - exclude: ["config/**"]
-        - include: ["**"]
+        - excludes: ["config/**"]
+        - includes: ["**"]
     - type: UniquePaths
       strategy: UseLast
