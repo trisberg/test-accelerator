@@ -19,7 +19,7 @@ engine:
   derivedSymbols:
     - name: thePath
       expression: "'TEST.md'"
-  transformations:
+  sources:
   - includes: ["README.md"]
   - type: RewritePath
     rewriteTo: "#thePath"
