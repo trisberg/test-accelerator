@@ -5,12 +5,12 @@ engine:
     symbols:
     - name: theAnswer
       expression: "41 + 1"
-      in:
-        type: Chain
-        transformations:
-        - type: Exclude
-          patterns: ["**", "config/**"]
-        - type: Include
-          patterns: ["README.md"]
-        - type: Unique
-          strategy: UseLast
+    in:
+      type: Chain
+      transformations:
+      - type: Exclude
+        patterns: ["**", "config/**"]
+      - type: Include
+        patterns: ["README.md"]
+      - type: Unique
+        strategy: UseLast
