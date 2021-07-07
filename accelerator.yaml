@@ -1,6 +1,8 @@
 engine:
   type: Merge
-  onConflict: UseLast
   sources:
    - excludes: [ "config/**" ]
    - includes: [ "**" ]
+   - type: UniquePath
+     onConflict: UseLast
+
