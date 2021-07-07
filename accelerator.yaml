@@ -1,3 +1,7 @@
 engine:
-  excludes: ["config/**"]
-  includes: ["**"]
+  type: Chain
+  transformations:
+    - type: Exclude
+      patterns: ["config/**"]
+    - type: Include 
+      patterns: ["**"]
