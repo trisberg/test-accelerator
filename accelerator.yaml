@@ -22,6 +22,7 @@ engine:
   sources:
   - includes: ["LICENSE"]
   - includes: ["README.md"]
-    type: RewritePath
-    rewriteTo: "#thePath"
+    transformations:
+      type: RewritePath
+      rewriteTo: "#thePath"
 
