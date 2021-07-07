@@ -1,6 +1,10 @@
 engine:
   type: Chain
   transformations:
+  - type: Let
+    derivedSymbols:
+    - name: theAnswer
+      expression: "41 + 1"
   - type: Exclude
     patterns: ["**", "config/**"]
   - type: Include
