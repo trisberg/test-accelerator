@@ -1,6 +1,5 @@
 engine:
   type: Merge
-  onConflict: Append
   sources:
    - excludes: [ "config/**" ]
-   - includes: [ "**" ]
+     includes: [ "**" ]
