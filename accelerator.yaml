@@ -1,3 +1,2 @@
-engine:
-  type: Include
-  patterns: ["**"]
+engine: # default engine declaration used when no `engine` declaration is found.
+- includes: ["**"]
