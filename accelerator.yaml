@@ -1,7 +1,4 @@
 engine:
-  derivedSymbols:
-  - name: theAnswer
-    expression: "41 + 1"
   type: Chain
   transformations:
   - type: Exclude
