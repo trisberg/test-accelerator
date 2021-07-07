@@ -1,8 +1,6 @@
 engine:
   type: Chain
   transformations:
-  - type: UniquePath
-    onConflict: UseLast
   - type: Merge
     sources:
     - excludes: [ "README.md", "config/**" ]
