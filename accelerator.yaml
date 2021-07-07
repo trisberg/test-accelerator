@@ -1,5 +1,5 @@
 engine:
   derivedSymbols:
     - name: X
-      expression: "41 + 1"
+      value: "41 + 1"
   includes: [ "**" ]
