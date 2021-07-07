@@ -6,5 +6,4 @@ engine:
     - name: theAnswer
       expression: "41 + 1"
     in:
-      type: Include
-      patterns: ["README.md"]
+      includes: ["README.md"]
