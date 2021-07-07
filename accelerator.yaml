@@ -1,7 +1,4 @@
 engine:
-  type: Chain
-  transformations:
-    - type: Exclude
-      patterns: ["config/**"]
-    - type: Include 
-      patterns: ["**"]
+  derivedSymbols:
+    - name: X
+      expression: "41 + 1"
