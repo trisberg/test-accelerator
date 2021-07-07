@@ -1,8 +1,8 @@
 engine:
-  type: Merge
-  sources:
-  - excludes: [ "README.md", "config/**" ]
-  - includes: [ "README.md" ]
+  - type: Merge
+    sources:
+    - excludes: [ "README.md", "config/**" ]
+    - includes: [ "README.md" ]
   - type: UniquePath
     onConflict: UseLast
 
