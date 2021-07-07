@@ -3,3 +3,4 @@ engine:
   sources:
    - excludes: [ "config/**" ]
      includes: [ "**" ]
+   - includes: [ "config/*.yaml" ]
