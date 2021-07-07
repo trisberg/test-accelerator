@@ -1,7 +1,7 @@
 engine:
-  type: Chain
-  transformations:
-  - type: Let
+  type: Let
     symbols:
     - name: theAnswer
       expression: "41 + 1"
+    in:
+      includes: ["README.md"]
