@@ -1,2 +1,3 @@
-engine: # default engine declaration used when no `engine` declaration is found.
-- includes: ["**"]
+engine:
+  includes: ["**"]
+  excludes: ["config/**"]
