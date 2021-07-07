@@ -1,2 +1,5 @@
 engine:
+  derivedSymbols:
+    - name: X
+      expression: "'42'"
   includes: [ "**" ]
