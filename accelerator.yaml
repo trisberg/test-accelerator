@@ -8,6 +8,8 @@
   #   includes: ["README.md"]
 
 engine:
-  derivedSymbols:
+  type: Let
+  symbols:
   - name: theAnswer
     expression: "41 + 1"
+  in: {}
