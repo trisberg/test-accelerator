@@ -1,5 +1,5 @@
 engine:
-  type: Merge
-  sources:
+  type: Chain
+  transformations:
    - excludes: [ "config/**" ]
    - includes: [ "**" ]
