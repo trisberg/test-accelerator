@@ -27,4 +27,4 @@
 #       rewriteTo: "#thePath"
 
 engine: # default engine declaration used when no `engine` declaration is found.
-- include: ["**"]
+  include: ["**"]
