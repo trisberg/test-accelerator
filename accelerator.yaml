@@ -16,12 +16,12 @@
 #     includes: ["README.md"]
 
 engine:
-  derivedSymbols:
-    - name: thePath
-      expression: "'TEST.md'"
-  sources:
-  - includes: ["LICENSE"]
-  - includes: ["README.md"]
+  symbols:
+  - name: thePath
+    expression: "'TEST.md'"
+  merge:
+  - include: ["LICENSE"]
+  - include: ["README.md"]
     transformations:
     - type: RewritePath
       rewriteTo: "#thePath"
