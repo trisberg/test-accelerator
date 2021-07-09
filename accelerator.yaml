@@ -16,7 +16,7 @@
 #     includes: ["README.md"]
 
 engine:
-  symbols:
+  let:
   - name: thePath
     expression: "'TEST.md'"
   merge:
