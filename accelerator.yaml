@@ -1,11 +1,11 @@
-  # includes: ["README.md"]
+# includes: ["README.md"]
 
-  # type: Let
-  # symbols:
-  # - name: theAnswer
-  #   expression: "41 + 1"
-  # in:
-  #   includes: ["README.md"]
+# type: Let
+# symbols:
+# - name: theAnswer
+#   expression: "41 + 1"
+# in:
+#   includes: ["README.md"]
 
 # engine:
 #   type: Let
@@ -15,14 +15,16 @@
 #   in:
 #     includes: ["README.md"]
 
-engine:
-  let:
-  - name: thePath
-    expression: "'TEST.md'"
-  merge:
-  - include: ["LICENSE"]
-  - include: ["README.md"]
-    transformations:
-    - type: RewritePath
-      rewriteTo: "#thePath"
+# engine:
+#   let:
+#   - name: thePath
+#     expression: "'TEST.md'"
+#   merge:
+#   - include: ["LICENSE"]
+#   - include: ["README.md"]
+#     transformations:
+#     - type: RewritePath
+#       rewriteTo: "#thePath"
 
+engine: # default engine declaration used when no `engine` declaration is found.
+- include: ["**"]
