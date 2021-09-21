@@ -27,4 +27,11 @@
 #       rewriteTo: "#thePath"
 
 engine: # default engine declaration used when no `engine` declaration is found.
-  include: ["**"]
+  merge:
+  - include: ["**"]
+  - include: ['README.md']
+    chain:
+    - type: ReplaceText
+      substitutions:
+        - text: INSERT-TEXT-HERE
+          with: #files.contentsOf('test.txt')
