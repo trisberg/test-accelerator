@@ -1,3 +1,39 @@
+accelerator:
+  displayName: Test Accelerator
+  description: A test acelerator
+  tags:
+  - test
+  - tanzu
+
+  # options for the UI
+  options:
+  - name: advanced
+    inputType: checkbox
+    dataType: boolean
+    defaultValue: false
+    required: true
+  - name: inputOne
+    inputType: text
+    label: Input one
+    description: The first input value
+    defaultValue: testing
+    dependsOn:
+      name: advanced
+  - name: inputTwo
+    inputType: text
+    label: Input two
+    description: The second input value
+    defaultValue: testing testing
+    dependsOn:
+      name: advanced
+  - name: inputThree
+    inputType: checkbox
+    dataType: boolean
+    label: Input three
+    description: The third input value
+    defaultValue: true
+    dependsOn:
+      name: advanced
 
 engine: # default engine declaration used when no `engine` declaration is found.
   merge:
@@ -7,4 +43,13 @@ engine: # default engine declaration used when no `engine` declaration is found.
     - type: ReplaceText
       substitutions:
         - text: INSERT-TEXT-HERE
-          with: "#files.contentsOf('test.txt')"
+          with: "#inputTwo"
+  - include: [ "test.txt" ]
+    condition: "#advanced"
+    chain:
+    - type: ReplaceText
+      substitutions:
+      - text: "works"
+        with: "#artifactId"
+    - type: RewritePath
+      rewriteTo: "'more.txt'"

@@ -2,6 +2,7 @@ apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
 kind: Accelerator
 metadata:
   name: test-accelerator
+  namespace: accelerator-system
 spec:
   displayName: Test Acclerator
   description: A test accelerator
