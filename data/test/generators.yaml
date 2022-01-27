@@ -1,0 +1,172 @@
+---
+name: testgenerator
+displayName: No deployment configuation
+description: Does not add additional deployment configuration to the new project.
+iconUrl: https://icon-library.com/images/rick-sanchez-icon/rick-sanchez-icon-24.jpg
+tags:
+  - none
+commands: |-
+  none new
+sourceUrl: https://github.com/simple-starters/generator-none
+---
+name: kubernetes-kustomize-skaffold
+displayName: Spring Boot on Kubernetes using Kustomize and Skaffold
+description: Deploy a Spring Boot application on Kubernetes using kustomize, off-the-shell kustomizations, and deploy using skaffold.
+iconUrl: https://icon-library.com/images/rick-sanchez-icon/rick-sanchez-icon-24.jpg
+tags:
+  - skaffold
+  - kubernetes
+  - spring
+commands: |-
+  k8s new
+  k8s update
+sourceUrl: https://github.com/simple-starters/generator-boot-k8s-kustomize-skaffold?ref=1.0.0
+
+---
+name: kubernetes-kustomize-skaffold-no-dependencies
+displayName: Spring Boot on Kubernetes using Kustomize and Skaffold - no dependencies configured
+description: Deploy a Spring Boot application on Kubernetes using kustomize, off-the-shell kustomizations, and deploy using Skaffold.
+iconUrl: https://github.com/ddobrin/icons/blob/master/icon-no-dependency.png
+tags:
+  - skaffold
+  - kubernetes
+  - spring
+commands: |-
+  k8s new
+  k8s update
+sourceUrl: https://github.com/simple-starters/generator-boot-k8s-kustomize-skaffold-no-deps
+
+---
+name: knative-kustomize-skaffold
+displayName: Spring Boot with Knative Service using Kustomize and Skaffold
+description: Deploy a Spring Boot application using Jib for build, kustomize off-the-shell kustomizations for Knative Service, and deploy using skaffold.
+iconUrl: https://avatars3.githubusercontent.com/u/35583233?s=280&v=4
+tags:
+  - skaffold
+  - kubernetes
+  - knative
+  - spring
+commands: |-
+  knative new
+  knative update
+sourceUrl: https://github.com/simple-starters/generator-knative-kustomize-skaffold
+
+---
+name: knative-native-image
+displayName: Spring Boot  Native Image with Knative Service using Skaffold
+description: Deploy a Spring Boot application compled with buildpack as GraalVM native image, deployad as Knative Service using Skaffold.
+iconUrl: https://avatars3.githubusercontent.com/u/35583233?s=280&v=4
+tags:
+  - skaffold
+  - kubernetes
+  - knative
+  - spring
+commands: |-
+  knative new
+sourceUrl: https://github.com/simple-starters/generator-knative-boot-native?ref=main
+
+---
+name: kubernetes-resource-simple
+displayName: Spring Boot on Kubernetes using kubectl apply
+description: Deploy a Spring Boot application using a few Kubernetes resource files with kubectl.
+iconUrl: https://icon-library.com/images/rick-sanchez-icon/rick-sanchez-icon-24.jpg
+tags:
+  - kubernetes
+  - spring
+commands: |-
+  k8s-simple new
+  k8s-simple new-services
+sourceUrl: https://github.com/simple-starters/generator-k8s-simple
+
+---
+name: knative-resource-simple
+displayName: Spring Cloud Function in Knative using kubectl apply
+description: Deploy a Spring Cloud Function in Knative using a Kubernetes resource files with kubectl.
+iconUrl: https://avatars3.githubusercontent.com/u/35583233?s=280&v=4
+tags:
+  - kubernetes
+  - knative
+  - spring
+commands: |-
+  k8s-simple new
+  k8s-simple new-native
+sourceUrl: https://github.com/ddobrin/generator-knative-simple
+
+---
+name: knative-kpack-resource-simple
+displayName: Build Spring Cloud Function with Kpack and deploy in Knative using kubectl apply
+description: Build a Spring Cloud Function with Kpack and deploy in Knative using a Kubernetes resource files with kubectl
+iconUrl: https://avatars3.githubusercontent.com/u/35583233?s=280&v=4
+tags:
+  - kubernetes
+  - knative
+  - kpack
+  - spring
+commands: |-
+  k8s-kpack-simple new
+  k8s-kpack-simple new-native
+sourceUrl: https://github.com/ddobrin/generator-knative-kpack-simple
+
+---
+name: kubernetes-resource-skaffold
+displayName: Spring Boot on Kubernetes using Skaffold
+description: Deploy a Spring Boot application using a few Kubernetes resource files and skaffold.  Kustomize is not used.
+iconUrl: https://icon-library.com/images/rick-sanchez-icon/rick-sanchez-icon-24.jpg
+tags:
+  - kubernetes
+  - spring
+commands: |-
+  k8s-simple new
+sourceUrl: https://github.com/simple-starters/generator-k8s-skaffold
+
+---
+name: kubernetes-web-app-skaffold
+displayName: Generic web application on Kubernetes using Skaffold
+description: Deploy a generic web application using a few Kubernetes resource files and skaffold.
+iconUrl: https://icon-library.com/images/rick-sanchez-icon/rick-sanchez-icon-24.jpg
+tags:
+  - kubernetes
+  - web
+commands: |-
+  k8s-simple new
+sourceUrl: https://github.com/simple-starters/generator-web-app-skaffold
+
+---
+name: docker-compose
+displayName: Spring deployment of dependent services using docker-compose
+description: Deploy a Spring Boot application and access dependent services using Docker.
+iconUrl: https://icon-library.com/images/rick-sanchez-icon/rick-sanchez-icon-24.jpg
+tags:
+  - docker
+  - spring
+commands: |-
+  docker-compose new
+sourceUrl: https://github.com/markpollack/generator-docker-compose-spring?ref=1.0.0
+
+---
+name: kubernetes-steeltoe-skaffold
+displayName: Steeltoe Kubernetes Deployment using Skaffold
+description: Deploy a Steeltoe using Docker for build, kustomize for YAML management, and deploy using skaffold.
+iconUrl: https://www.3dflow.net/forums/core/image.php?userid=98&dateline=1500310086
+tags:
+  - skaffold
+  - kubernetes
+  - steeltoe
+commands: |-
+  kubernetesdotnet new
+  kubernetesdotnet update
+sourceUrl: https://gitlab.eng.vmware.com/tanzu-starter-service/tss/tree/master/tss-default-generators
+
+---
+name: cloudfoundry
+displayName: Cloud Foundry Deployment using the Java Buildpack and RabbitMQ service
+description: Deploy a Spring Boot application to Cloud Foundry with RabbitMQ service.
+iconUrl: https://pbs.twimg.com/profile_images/1151235235968716800/VJI_bxtd_400x400.jpg
+tags:
+  - cloudfoundry
+  - java-buildpack
+  - rabbitmq
+  - spring
+commands: |-
+  cloudfoundry new
+sourceUrl: https://github.com/markpollack/generator-cloudfoundry

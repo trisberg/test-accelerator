@@ -1,0 +1,207 @@
+name: spring-mysql-jpa
+displayName: Spring Data JPA with MySQL
+displayWeight: 100
+sourceUrl: github.com/markpollack/gs-accessing-data-mysql
+tags:
+  - database
+  - spring
+  - jpa
+  - mysql
+description: A Spring Boot application that connects to a MySQL database and uses Spring Data JPA to access the database.  Contains stub code for accessing User data using Spring Data JPA.
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-data.png
+generatorNames:
+  - kubernetes-kustomize-skaffold
+  - kubernetes-resource-simple
+
+---
+name: hello-fun
+displayName: Spring Cloud Function Serverless App
+displayWeight: 500
+sourceUrl: https://github.com/simple-starters/hello-fun?ref=v0.1.0
+tags:
+  - spring
+  - cloud
+  - function
+description: A basic hello world Spring Cloud Function serverless app
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-cloud.png
+generatorNames:
+  - knative-kustomize-skaffold
+  - kubernetes-resource-simple
+  - kubernetes-resource-skaffold
+
+---
+name: native-fun
+displayName: Spring Cloud Function Serverless Native Image App
+displayWeight: 500
+sourceUrl: https://github.com/simple-starters/native-fun?ref=main
+tags:
+  - spring
+  - cloud
+  - function
+  - serverless
+  - native image
+description: A basic hello world Spring Cloud Function serverless app with GraalVM Native Image Compilation
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-cloud.png
+generatorNames:
+  - knative-native-image
+
+---
+name: knative-function
+displayName: Spring Cloud Function Serverless JVM/Native App on Knative
+displayWeight: 900
+sourceUrl: https://github.com/ddobrin/spring-native-function-knative
+tags:
+  - spring
+  - cloud
+  - function
+  - serverless
+  - native image
+description: A simple Spring Cloud Function-based serverless app with JVM/GraalVM Native Image Compilation
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-cloud.png
+generatorNames:
+  - kubernetes-resource-simple
+  - knative-resource-simple
+  - knative-kpack-resource-simple
+  - knative-kustomize-skaffold
+
+---
+name: uppercase-function-azure
+displayName: Spring Cloud Function App - Azure Functions
+displayWeight: 900
+sourceUrl: https://github.com/ddobrin/azure-cloud-function-sample
+tags:
+  - spring
+  - cloud
+  - function
+description: A simple example of a Spring Boot Function running in Microsoft Azure Functions
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-cloud.png
+
+---
+name: todo-service
+displayName: Spring Boot TODO service
+displayWeight: 800
+sourceUrl: https://github.com/ddobrin/todos-api
+tags:
+  - spring
+description: A Spring Boot microservice that uses spring-boot-starter-web to implement a REST API for TODO(s)
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-boot.png
+generatorNames:
+  - kubernetes-resource-simple
+  - kubernetes-resource-skaffold
+  - kubernetes-kustomize-skaffold-no-dependencies
+
+---
+name: ebanking-service
+displayName: Spring Boot eBanking service
+displayWeight: 800
+sourceUrl: https://github.com/ddobrin/ebanking-api
+tags:
+  - spring
+description: A Spring Boot microservice that uses the Spring Boot Web Starter to implement a REST API for an eBanking application
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-boot.png
+generatorNames:
+  - kubernetes-resource-simple
+  - kubernetes-resource-skaffold
+  - kubernetes-kustomize-skaffold-no-dependencies
+
+---
+name: db-fun
+displayName: Spring Cloud Function Serverless App with MySql
+displayWeight: 100
+sourceUrl: https://github.com/simple-starters/db-fun?ref=v0.1.0
+tags:
+  - spring
+  - cloud
+  - function
+  - mysql
+description: A basic hello world Spring Cloud Function serverless app with db access
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-cloud.png
+generatorNames:
+  - knative-kustomize-skaffold
+
+---
+name: kafka-fun
+displayName: Spring Cloud Function Serverless App with Kafka
+displayWeight: 100
+sourceUrl: https://github.com/simple-starters/kafka-fun
+tags:
+  - spring
+  - cloud
+  - function
+  - kafka
+description: A basic hello world Spring Cloud Function serverless app using kafka
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-cloud.png
+generatorNames:
+  - knative-kustomize-skaffold
+
+---
+name: hello-ruby
+displayName: Sample Ruby App
+displayWeight: 100
+sourceUrl: https://github.com/simple-starters/hello-ruby?ref=master
+tags:
+  - ruby
+  - sinatra
+description: A basic hello world Ruby and Sinatra app
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-ruby.png
+generatorNames:
+  - kubernetes-web-app-skaffold
+
+---
+name: spring-postgres-jpa
+displayName: Spring Data JPA with Postgres
+displayWeight: 10
+sourceUrl: github.com/markpollack/docker-compose-postgres?ref=1.0.0
+tags:
+  - spring
+  - database
+  - jpa
+  - postgresql
+description: A Spring Boot application that connects to a PostgreSQL database and uses Spring Data JPA to access the database.  Contains code for accessing Quote data.
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-data.png
+generatorNames:
+  - docker-compose
+
+---
+name: spring-rabbitmq
+displayName: Spring and RabbitMQ Publisher - X
+displayWeight: 10
+sourceUrl: https://github.com/spring-guides/gs-messaging-rabbitmq//complete
+tags:
+  - messaging
+  - spring
+  - rabbitmq
+description: A Spring Boot application with stub code for publishing a message to RabbitMQ.
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-rabbitmq.png
+generatorNames:
+  - cloudfoundry
+
+---
+name: dotnet-aspnet-hello
+displayName: Base ASP.NET MVC Application -X
+displayWeight: 10
+sourceUrl: https://github.com/markpollack/HelloWorldAspNetCore
+tags:
+  - dotnet
+  - mvc-31
+  - web
+description: The Hello World ASP.NET application with SSO integration.
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-dotnet.png
+generatorNames:
+  - kubernetes-steeltoe-skaffold
+
+---
+name: boot-angular-gateway-oidc
+displayName: Spring Boot + Angular + Spring Cloud Gateway + OpenID Connect - X
+displayWeight: 10
+sourceUrl: https://github.com/asaikali/boot-angular-gateway-oidc
+tags:
+  - java
+  - spring
+  - angular
+  - spring-cloud-gateway
+  - openid-connect
+description: A Spring Boot application for implementing an API and using Angular for the frontend, served via Spring Cloud Gateway, Using Cloud Foundry Container to container networking.
+iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-boot-angular.png
+generatorNames:
+  - cloudfoundry

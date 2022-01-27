@@ -38,6 +38,11 @@ accelerator:
 engine: # default engine declaration used when no `engine` declaration is found.
   merge:
   - include: ["**"]
+    exclude: ["data/test/**"]
+  - include: ["data/test/**"]
+    chain:
+    - type: RewritePath
+      rewriteTo: "#filename"
   - include: ['README.md']
     chain:
     - type: ReplaceText
