@@ -4,6 +4,7 @@ accelerator:
   tags:
   - test
   - tanzu
+  - Spring Boot
 
   # options for the UI
   options:
