@@ -8,8 +8,6 @@ accelerator:
 
   # options for the UI
   options:
-  - name: fake
-    required: "XX"
   - name: advanced
     inputType: checkbox
     dataType: boolean
