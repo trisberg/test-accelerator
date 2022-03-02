@@ -1,10 +1,10 @@
 accelerator:
   displayName: Test Accelerator
   description: A test acelerator
-  tags:
-  - test
-  - tanzu
-  - Spring Boot
+#   tags:
+#   - test
+#   - tanzu
+#   - Spring Boot
 
   # options for the UI
   options:
