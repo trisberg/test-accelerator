@@ -37,6 +37,9 @@ accelerator:
       name: advanced
 
 engine: # default engine declaration used when no `engine` declaration is found.
+  let:
+  - name: test
+    expression: "#inputTwo + ':test'"
   merge:
   - include: ["**"]
     exclude: ["data/test/**"]
@@ -56,6 +59,6 @@ engine: # default engine declaration used when no `engine` declaration is found.
     - type: ReplaceText
       substitutions:
       - text: "works"
-        with: "#inputtwo"
+        with: "#test"
     - type: RewritePath
       rewriteTo: "'more.txt'"
