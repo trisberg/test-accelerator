@@ -35,6 +35,10 @@ accelerator:
     defaultValue: true
     dependsOn:
       name: advanced
+  imports:
+    - name: java-version
+      expose:
+        - name: "*"
 
 engine: # default engine declaration used when no `engine` declaration is found.
   let:
