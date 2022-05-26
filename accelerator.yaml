@@ -50,6 +50,8 @@ accelerator:
     label: Input four
     description: The 4th input value
     defaultValue: true
+    dependsOn:
+      name: simple
   imports:
     - name: java-version
       expose:
