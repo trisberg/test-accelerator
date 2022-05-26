@@ -11,6 +11,8 @@ accelerator:
   - name: advanced
     inputType: checkbox
     dataType: boolean
+    label: Input for advanced
+    description: The advanced input value
     defaultValue: false
     required: true
   - name: inputOne
