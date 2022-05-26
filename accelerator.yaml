@@ -37,6 +37,12 @@ accelerator:
     defaultValue: true
     dependsOn:
       name: advanced
+  - name: inputFour
+    inputType: checkbox
+    dataType: boolean
+    label: Input four
+    description: The 4th input value
+    defaultValue: true
   imports:
     - name: java-version
       expose:
