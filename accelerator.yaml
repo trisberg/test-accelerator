@@ -8,6 +8,13 @@ accelerator:
 
   # options for the UI
   options:
+  - name: simple
+    inputType: checkbox
+    dataType: boolean
+    label: Input for simple
+    description: The simple input value
+    defaultValue: false
+    required: true
   - name: advanced
     inputType: checkbox
     dataType: boolean
