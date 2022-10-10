@@ -80,6 +80,6 @@ engine: # default engine declaration used when no `engine` declaration is found.
     - type: ReplaceText
       substitutions:
       - text: "works"
-        with: "#test"
+        with: "#fail"
     - type: RewritePath
       rewriteTo: "'more.txt'"
