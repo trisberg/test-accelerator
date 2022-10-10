@@ -75,9 +75,9 @@ engine: # default engine declaration used when no `engine` declaration is found.
         - text: INSERT-TEXT-HERE
           with: "#inputTwo"
   - include: [ "test.txt" ]
-    condition: "#advancedx"
+    condition: "#advanced"
     chain:
-    - type: ReplaceText
+    - type: ReplaceTextX
       substitutions:
       - text: "works"
         with: "#test"
