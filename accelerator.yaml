@@ -77,9 +77,11 @@ engine: # default engine declaration used when no `engine` declaration is found.
   - include: [ "test.txt" ]
     condition: "#advanced"
     chain:
-    - type: ReplaceTextX
-      substitutions:
-      - text: "works"
-        with: "#test"
-    - type: RewritePath
-      rewriteTo: "'more.txt'"
+      - include: ["**"]
+        chain:
+        - type: ReplaceTextX
+          substitutions:
+          - text: "works"
+            with: "#test"
+        - type: RewritePath
+          rewriteTo: "'more.txt'"
