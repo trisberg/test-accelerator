@@ -32,9 +32,6 @@ accelerator:
       name: advanced
 
 engine: # default engine declaration used when no `engine` declaration is found.
-  let:
-  - name: test
-    expression: "#inputTwo + ':test'"
   merge:
   - include: ["**"]
     exclude: ["data/test/**"]
@@ -42,9 +39,3 @@ engine: # default engine declaration used when no `engine` declaration is found.
     chain:
     - type: RewritePath
       rewriteTo: "#filename"
-  - include: ['README.md']
-    chain:
-    - type: ReplaceText
-      substitutions:
-        - text: INSERT-TEXT-HERE
-          with: "#inputTwo"
