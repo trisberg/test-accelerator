@@ -10,6 +10,8 @@ accelerator:
   options:
   - name: projectName
     label: Name
+    inputType: text
+    defaultValue: myname
     required: true
   - name: advanced
     inputType: checkbox
