@@ -11,13 +11,6 @@ accelerator:
   - name: projectName
     label: Name
     required: true
-  - name: simple
-    inputType: checkbox
-    dataType: boolean
-    label: Input for simple
-    description: The simple input value
-    defaultValue: false
-    required: true
   - name: advanced
     inputType: checkbox
     dataType: boolean
@@ -30,8 +23,6 @@ accelerator:
     label: Input one
     description: The first input value
     defaultValue: testing
-    dependsOn:
-      name: advanced
   - name: inputTwo
     inputType: text
     label: Input two
@@ -39,26 +30,6 @@ accelerator:
     defaultValue: testing testing
     dependsOn:
       name: advanced
-  - name: inputThree
-    inputType: checkbox
-    dataType: boolean
-    label: Input three
-    description: The third input value
-    defaultValue: true
-    dependsOn:
-      name: advanced
-  - name: inputFour
-    inputType: checkbox
-    dataType: boolean
-    label: Input four
-    description: The 4th input value
-    defaultValue: true
-    dependsOn:
-      name: simple
-  imports:
-    - name: java-version
-      expose:
-        - name: "*"
 
 engine: # default engine declaration used when no `engine` declaration is found.
   let:
@@ -77,14 +48,3 @@ engine: # default engine declaration used when no `engine` declaration is found.
       substitutions:
         - text: INSERT-TEXT-HERE
           with: "#inputTwo"
-  - include: [ "test.txt" ]
-    condition: "#advanced"
-    chain:
-      - include: ["**"]
-        chain:
-        - type: ReplaceTextX
-          substitutions:
-          - text: "works"
-            with: "#test"
-        - type: RewritePath
-          rewriteTo: "'more.txt'"
