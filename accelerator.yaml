@@ -8,6 +8,9 @@ accelerator:
 
   # options for the UI
   options:
+  - name: projectName
+    label: Name
+    required: true
   - name: simple
     inputType: checkbox
     dataType: boolean
