@@ -4,16 +4,14 @@ accelerator:
   tags:
   - test
   - tanzu
-  - Spring-Boot
+  - spring-boot
 
   # options for the UI
   options:
-  - name: simple
-    inputType: checkbox
-    dataType: boolean
-    label: Input for simple
-    description: The simple input value
-    defaultValue: false
+  - name: projectName
+    label: Name
+    inputType: text
+    defaultValue: myname
     required: true
   - name: advanced
     inputType: checkbox
@@ -27,8 +25,6 @@ accelerator:
     label: Input one
     description: The first input value
     defaultValue: testing
-    dependsOn:
-      name: advanced
   - name: inputTwo
     inputType: text
     label: Input two
@@ -36,31 +32,8 @@ accelerator:
     defaultValue: testing testing
     dependsOn:
       name: advanced
-  - name: inputThree
-    inputType: checkbox
-    dataType: boolean
-    label: Input three
-    description: The third input value
-    defaultValue: true
-    dependsOn:
-      name: advanced
-  - name: inputFour
-    inputType: checkbox
-    dataType: boolean
-    label: Input four
-    description: The 4th input value
-    defaultValue: true
-    dependsOn:
-      name: simple
-  imports:
-    - name: java-version
-      expose:
-        - name: "*"
 
 engine: # default engine declaration used when no `engine` declaration is found.
-  let:
-  - name: test
-    expression: "#inputTwo + ':test'"
   merge:
   - include: ["**"]
     exclude: ["data/test/**"]
