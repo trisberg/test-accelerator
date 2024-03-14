@@ -83,3 +83,10 @@ engine: # default engine declaration used when no `engine` declaration is found.
         with: "#test"
     - type: RewritePath
       rewriteTo: "'more.txt'"
+  - include: [ "config/workload.yaml" ]
+    chain:
+    - type: OpenRewriteRecipe
+      recipe: org.openrewrite.yaml.ChangeValue
+      options:
+        oldKeyPath: '"$.spec.source.git.url"'
+        value: "'https://github.com/demo/test-accelerator.git'"
