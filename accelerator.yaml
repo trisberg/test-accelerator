@@ -17,7 +17,7 @@ accelerator:
 engine: # default engine declaration used when no `engine` declaration is found.
   merge:
   - include: ["**"]
-    exclude: ["data/test/**"]
+    exclude: ["data/test/**", "config/workload.yaml"]
   - include: ["data/test/**"]
     chain:
     - type: RewritePath
