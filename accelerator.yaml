@@ -13,25 +13,6 @@ accelerator:
     inputType: text
     defaultValue: myname
     required: true
-  - name: advanced
-    inputType: checkbox
-    dataType: boolean
-    label: Input for advanced
-    description: The advanced input value
-    defaultValue: false
-    required: true
-  - name: inputOne
-    inputType: text
-    label: Input one
-    description: The first input value
-    defaultValue: testing
-  - name: inputTwo
-    inputType: text
-    label: Input two
-    description: The second input value
-    defaultValue: testing testing
-    dependsOn:
-      name: advanced
 
 engine: # default engine declaration used when no `engine` declaration is found.
   merge:
@@ -41,21 +22,6 @@ engine: # default engine declaration used when no `engine` declaration is found.
     chain:
     - type: RewritePath
       rewriteTo: "#filename"
-  - include: ['README.md']
-    chain:
-    - type: ReplaceText
-      substitutions:
-        - text: INSERT-TEXT-HERE
-          with: "#inputTwo"
-  - include: [ "test.txt" ]
-    condition: "#advanced"
-    chain:
-    - type: ReplaceText
-      substitutions:
-      - text: "works"
-        with: "#test"
-    - type: RewritePath
-      rewriteTo: "'more.txt'"
   - include: [ "config/workload.yaml" ]
     chain:
     - type: OpenRewriteRecipe
