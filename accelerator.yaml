@@ -11,7 +11,7 @@ accelerator:
   - name: projectName
     label: Name
     inputType: text
-    defaultValue: myname
+    defaultValue: test
     required: true
 
 engine: # default engine declaration used when no `engine` declaration is found.
